@@ -13,13 +13,27 @@ const companies = [
 const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
 // for
-for (let i = 0; i < companies.length; i++) {
-  console.log(companies[i]);
-}
+// for (let i = 0; i < companies.length; i++) {
+//   console.log(companies[i]);
+// }
 
 // forEach
+// companies.forEach(function (company) {
+//   console.log(company.name);
+// });
 
 // filter
+let canDrink = [];
+for (let i = 0; i < ages.length; i++) {
+  if (ages[i] > 15) {
+    canDrink.push(ages[i]);
+  }
+}
+
+console.log(canDrink);
+// ages.filter(function (age) {
+//   console.log(age > 15);
+// });
 
 // map
 
